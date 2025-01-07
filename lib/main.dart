@@ -5,11 +5,11 @@ import 'package:flutter_gen/gen_l10n/crowdin_localizations.dart';
 
 Future<void> main() async {
   try {
-    await Crowdin.init(
-      distributionHash: const String.fromEnvironment('CROWDINHASH'),
-      connectionType: InternetConnectionType.any,
-      updatesInterval: const Duration(hours: 1),
-    );
+    // await Crowdin.init(
+    //   distributionHash: const String.fromEnvironment('CROWDINHASH'),
+    //   connectionType: InternetConnectionType.any,
+    //   updatesInterval: const Duration(hours: 1),
+    // );
   } catch (e) {
     print(e);
   }
@@ -66,14 +66,12 @@ class MyHomePage extends StatelessWidget {
         actions: [
           DropdownButton<Locale>(
             value: contextLocale,
-            icon: const Icon(Icons.language, color: Colors.white),
             onChanged: (Locale? newValue) async {
               if (newValue != null) {
                 print('APP locale selected: $newValue');
-                Crowdin.loadTranslations(newValue).then((_){
+                // Crowdin.loadTranslations(newValue).then((_){
                   onLocaleChange(newValue);
-                });
-                // await Crowdin.loadTranslations(Locale('fr'));
+                // });
               }
             },
             items: const [
@@ -82,11 +80,11 @@ class MyHomePage extends StatelessWidget {
                 child: Text('English'),
               ),
               DropdownMenuItem(
-                value: Locale('fr'),
+                value: Locale('fr', 'FR'),
                 child: Text('Français'),
               ),
               DropdownMenuItem(
-                value: Locale('es'),
+                value: Locale('es', 'ES'),
                 child: Text('Español'),
               ),
             ],

@@ -1,9 +1,0 @@
-{
-  "@@locale": "es-ES",
-  "configuration": "Configuración",
-  "open": "Abierto",
-  "information": "Información",
-  "tryAgain": "Inténtelo de nuevo",
-  "receiptSentTo": "Tu recibo ha sido enviado a {email}",
-  "homepage": "Homepage"
-}
