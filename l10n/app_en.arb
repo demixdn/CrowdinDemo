@@ -1,0 +1,18 @@
+{
+  "@@locale": "en",
+  "configuration": "Configuration",
+  "open": "Open",
+  "information": "Information",
+  "tryAgain": "Try again",
+  "receiptSentTo": "Your receipt has been sent to {email}",
+  "@receiptSentTo": {
+    "description": "Receipt receiver message",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "john.doe@example.com"
+      }
+    }
+  },
+  "homepage": "Homepage"
+}
