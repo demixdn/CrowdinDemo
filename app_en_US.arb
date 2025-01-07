@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+  "configuration": "Configuration",
+  "open": "Open",
+  "information": "Information",
+  "tryAgain": "Try again",
+  "receiptSentTo": "Your receipt has been sent to {email}",
+  "homepage": "Homepage"
+}
