@@ -1,18 +1,7 @@
-import 'package:crowdin_sdk/crowdin_sdk.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_gen/gen_l10n/crowdin_localizations.dart';
 
 Future<void> main() async {
-  try {
-    // await Crowdin.init(
-    //   distributionHash: const String.fromEnvironment('CROWDINHASH'),
-    //   connectionType: InternetConnectionType.any,
-    //   updatesInterval: const Duration(hours: 1),
-    // );
-  } catch (e) {
-    print(e);
-  }
   runApp(const MyApp());
 }
 
@@ -43,7 +32,7 @@ class _MyAppState extends State<MyApp> {
       ),
       locale: _locale,
       supportedLocales: AppLocalizations.supportedLocales,
-      localizationsDelegates: CrowdinLocalization.localizationsDelegates,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
       home: MyHomePage(onLocaleChange: _changeLocale),
     );
   }
@@ -69,9 +58,7 @@ class MyHomePage extends StatelessWidget {
             onChanged: (Locale? newValue) async {
               if (newValue != null) {
                 print('APP locale selected: $newValue');
-                // Crowdin.loadTranslations(newValue).then((_){
                   onLocaleChange(newValue);
-                // });
               }
             },
             items: const [
