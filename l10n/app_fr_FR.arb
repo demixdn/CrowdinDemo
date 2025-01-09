@@ -1,8 +1,19 @@
 {
-  "configuration": "ParamÃ©trage",
+  "@@locale": "fr",
+  "configuration": "Paramétrage",
   "open": "Ouvert",
   "information": "Information",
-  "tryAgain": "RÃ©essayez",
-  "receiptSentTo": "Votre reÃ§u a Ã©tÃ© envoyÃ© Ã  {email}",
-  "homepage": "Page dâaccueil"
+  "tryAgain": "Réessayez",
+  "receiptSentTo": "Votre reçu a été envoyé à {email}",
+  "@receiptSentTo": {
+    "description": "Receipt receiver message",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "john.doe@example.com"
+      }
+    }
+  },
+  "homepage": "Page d’accueil",
+  "paymentPage": "Page de paiement"
 }

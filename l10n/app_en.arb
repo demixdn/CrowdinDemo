@@ -14,5 +14,6 @@
       }
     }
   },
-  "homepage": "Homepage"
+  "homepage": "Homepage",
+  "paymentPage": "Payment page"
 }

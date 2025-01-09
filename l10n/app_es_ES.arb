@@ -1,8 +1,19 @@
 {
+  "@@locale": "es-ES",
   "configuration": "Configurar",
   "open": "Abierto",
-  "information": "InformaciÃ³n",
-  "tryAgain": "IntÃ©ntelo de nuevo",
+  "information": "Información",
+  "tryAgain": "Inténtelo de nuevo",
   "receiptSentTo": "Tu recibo ha sido enviado a {email}",
-  "homepage": "Homepage"
+  "@receiptSentTo": {
+    "description": "Receipt receiver message",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "john.doe@example.com"
+      }
+    }
+  },
+  "homepage": "Homepage",
+  "paymentPage": "Pagina de pago"
 }
